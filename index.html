@@ -1,0 +1,395 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Quiz</title> 
+      <!-- Include the app.js script -->
+<!-- <script src="app.js" defer></script> -->
+<!-- </head>
+
+<body>
+    <h1>Node.js Quiz</h1>
+    <form id="quizForm" action="/submit" method="post">  -->
+<!-- Display quiz questions here -->
+<!-- <ul> -->
+<!-- Use JavaScript to populate the questions dynamically -->
+<!-- <!-- <li>
+                <strong>Question 1:</strong> What is the event-driven architecture used in
+                Node.js called?
+                <ul>
+                    <li><input type="radio" name="answers[0]" value="Event Loop"> Event Loop
+                    </li>
+                    <li><input type="radio" name="answers[0]" value="Callback Loop"> Callback
+                        Loop</li>
+                    <li><input type="radio" name="answers[0]" value="Async Loop"> Async Loop
+                    </li>
+                    <li><input type="radio" name="answers[0]" value="Promise Loop"> Promise
+                        Loop</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 2:</strong> Which module in Node.js is used to create web
+                servers?
+                <ul>
+                    <li><input type="radio" name="answers[1]" value="http"> http</li>
+                    <li><input type="radio" name="answers[1]" value="fs"> fs</li>
+                    <li><input type="radio" name="answers[1]" value="path"> path</li>
+                    <li><input type="radio" name="answers[1]" value="net"> net</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 3:</strong> Which of the following is NOT a valid way to handle
+                errors in Node.js?
+                <ul>
+                    <li><input type="radio" name="answers[2]" value="try-catch blocks">
+                        try-catch blocks</li>
+                    <li><input type="radio" name="answers[2]" value="callback functions with error-first approach">
+                        callback
+                        functions with error-first approach</li>
+                    <li><input type="radio" name="answers[2]" value="event listeners"> event
+                        listeners</li>
+                    <li><input type="radio" name="answers[2]" value="promise chaining">
+                        promise chaining</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 4:</strong> Which module in Node.js is used for handling file
+                operations?
+                <ul>
+                    <li><input type="radio" name="answers[3]" value="fs (File System)"> fs
+                        (File System)</li>
+                    <li><input type="radio" name="answers[3]" value="http (HTTP)"> http
+                        (HTTP)</li>
+                    <li><input type="radio" name="answers[3]" value="net (Network)"> net
+                        (Network)</li>
+                    <li><input type="radio" name="answers[3]" value="url (URL)"> url (URL)
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 5:</strong> Which function is used to import modules in
+                Node.js?
+                <ul>
+                    <li><input type="radio" name="answers[4]" value="import"> import</li>
+                    <li><input type="radio" name="answers[4]" value="require"> require</li>
+                    <li><input type="radio" name="answers[4]" value="importModule">
+                        importModule</li>
+                    <li><input type="radio" name="answers[4]" value="include"> include</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 6:</strong> What does the event loop in Node.js do?
+                <ul>
+                    <li><input type="radio" name="answers[5]" value="Handles asynchronous operations"> Handles
+                        asynchronous
+                        operations</li>
+                    <li><input type="radio" name="answers[5]" value="Executes synchronous code"> Executes synchronous
+                        code</li>
+                    <li><input type="radio" name="answers[5]" value="Renders web pages">
+                        Renders web pages</li>
+                    <li><input type="radio" name="answers[5]" value="Manipulates the DOM">
+                        Manipulates the DOM</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 7:</strong> What is a callback function in Node.js?
+                <ul>
+                    <li><input type="radio" name="answers[6]" value="A function that returns a value"> A function
+                        that returns a
+                        value</li>
+                    <li><input type="radio" name="answers[6]"
+                            value="A function passed as an argument to another function to be executed later">
+                        A function passed as an argument to another function to be executed
+                        later</li>
+                    <li><input type="radio" name="answers[6]" value="A function that runs immediately"> A function
+                        that runs
+                        immediately</li>
+                    <li><input type="radio" name="answers[6]" value="A function that only runs once"> A function that
+                        only runs
+                        once</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 8:</strong> What is the purpose of the require.cache object in
+                Node.js?
+                <ul>
+                    <li><input type="radio" name="answers[7]"
+                            value="To cache frequently used modules for faster access"> To cache
+                        frequently used modules for faster access</li>
+                    <li><input type="radio" name="answers[7]"
+                            value="To store information about all installed packages"> To store
+                        information about all installed packages</li>
+                    <li><input type="radio" name="answers[7]" value="To manage the memory usage of the application">
+                        To manage the
+                        memory usage of the application</li>
+                    <li><input type="radio" name="answers[7]" value="To track the dependencies of the application">
+                        To track the
+                        dependencies of the application</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 9:</strong> What is npm in the context of Node.js?
+                <ul>
+                    <li><input type="radio" name="answers[8]" value="Node Package Manager">
+                        Node Package Manager</li>
+                    <li><input type="radio" name="answers[8]" value="Network Package Manager"> Network Package
+                        Manager</li>
+                    <li><input type="radio" name="answers[8]" value="Node Programming Module">Node Programming Module
+                    </li>
+                    <li><input type="radio" name="answers[8]" value="Network Programming Module"> Network Programming
+                        Module</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 10:</strong> What is the main purpose of Node.js?
+                <ul>
+                    <li><input type="radio" name="answers[9]" value="Frontend development">
+                        Frontend development</li>
+                    <li><input type="radio" name="answers[9]" value="Backend development">
+                        Backend development</li>
+                    <li><input type="radio" name="answers[9]" value="Mobile app development">
+                        Mobile app development</li>
+                    <li><input type="radio" name="answers[9]" value="Game development"> Game
+                        development</li>
+                </ul>
+            </li>
+        </ul>
+        
+    </form>
+    <button type="submit" form="quizForm" onclick="submitAnswers()">Submit Answers</button>
+    <script> -->
+<!-- // Function to submit quiz answers
+        function submitAnswers() {
+            const form = document.getElementById('quizForm');
+            const formData = new FormData(form);
+
+            fetch('/submit', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Handle response from server (display score and feedback)
+                console.log(data);
+            })
+            .catch(error => {
+                // Handle errors
+                console.error('Error:', error);
+            });
+        }
+
+        // Fetch quiz questions from server
+        fetch('/quiz')
+        .then(response => response.json())
+        .then(data => {
+            // Populate quiz questions dynamically
+            const form = document.getElementById('quizForm');
+            data.forEach(question => {
+                const questionElement = document.createElement('fieldset');
+                const legend = document.createElement('legend');
+                legend.textContent = question.question;
+                questionElement.appendChild(legend);
+                question.options.forEach((option, index) => {
+                    const input = document.createElement('input');
+                    input.type = 'radio';
+                    input.name = 'answers[' + question.id + ']';
+                    input.value = option;
+                    const label = document.createElement('label');
+                    label.textContent = option;
+                    questionElement.appendChild(input);
+                    questionElement.appendChild(label);
+                    questionElement.appendChild(document.createElement('br'));
+                });
+                form.appendChild(questionElement);
+            });
+        })
+        .catch(error => {
+            // Handle errors
+            console.error('Error:', error);
+        });
+    </script>
+    <script src="app.js"></script>
+
+</body>
+
+</html> -->
+
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Quiz</title>
+</head>
+
+<body>
+    <h1>Node.js Quiz</h1>
+    <div id="question-container"></div>
+    <form id="quiz-form" action="/submit" method="post">
+        <!-- Display quiz questions here -->
+        <ul>
+            <!-- Use JavaScript to populate the questions dynamically -->
+            <li>
+                <strong>Question 1:</strong> What is the event-driven architecture used in
+                Node.js called?
+                <ul>
+                    <li><input type="radio" name="answers[0]" value="Event Loop"> Event Loop
+                    </li>
+                    <li><input type="radio" name="answers[0]" value="Callback Loop"> Callback
+                        Loop</li>
+                    <li><input type="radio" name="answers[0]" value="Async Loop"> Async Loop
+                    </li>
+                    <li><input type="radio" name="answers[0]" value="Promise Loop"> Promise
+                        Loop</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 2:</strong> Which module in Node.js is used to create web
+                servers?
+                <ul>
+                    <li><input type="radio" name="answers[1]" value="http"> http</li>
+                    <li><input type="radio" name="answers[1]" value="fs"> fs</li>
+                    <li><input type="radio" name="answers[1]" value="path"> path</li>
+                    <li><input type="radio" name="answers[1]" value="net"> net</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 3:</strong> Which of the following is NOT a valid way to handle
+                errors in Node.js?
+                <ul>
+                    <li><input type="radio" name="answers[2]" value="try-catch blocks">
+                        try-catch blocks</li>
+                    <li><input type="radio" name="answers[2]" value="callback functions with error-first approach">
+                        callback
+                        functions with error-first approach</li>
+                    <li><input type="radio" name="answers[2]" value="event listeners"> event
+                        listeners</li>
+                    <li><input type="radio" name="answers[2]" value="promise chaining">
+                        promise chaining</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 4:</strong> Which module in Node.js is used for handling file
+                operations?
+                <ul>
+                    <li><input type="radio" name="answers[3]" value="fs (File System)"> fs
+                        (File System)</li>
+                    <li><input type="radio" name="answers[3]" value="http (HTTP)"> http
+                        (HTTP)</li>
+                    <li><input type="radio" name="answers[3]" value="net (Network)"> net
+                        (Network)</li>
+                    <li><input type="radio" name="answers[3]" value="url (URL)"> url (URL)
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 5:</strong> Which function is used to import modules in
+                Node.js?
+                <ul>
+                    <li><input type="radio" name="answers[4]" value="import"> import</li>
+                    <li><input type="radio" name="answers[4]" value="require"> require</li>
+                    <li><input type="radio" name="answers[4]" value="importModule">
+                        importModule</li>
+                    <li><input type="radio" name="answers[4]" value="include"> include</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 6:</strong> What does the event loop in Node.js do?
+                <ul>
+                    <li><input type="radio" name="answers[5]" value="Handles asynchronous operations"> Handles
+                        asynchronous
+                        operations</li>
+                    <li><input type="radio" name="answers[5]" value="Executes synchronous code"> Executes synchronous
+                        code</li>
+                    <li><input type="radio" name="answers[5]" value="Renders web pages">
+                        Renders web pages</li>
+                    <li><input type="radio" name="answers[5]" value="Manipulates the DOM">
+                        Manipulates the DOM</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 7:</strong> What is a callback function in Node.js?
+                <ul>
+                    <li><input type="radio" name="answers[6]" value="A function that returns a value"> A function
+                        that returns a
+                        value</li>
+                    <li><input type="radio" name="answers[6]"
+                            value="A function passed as an argument to another function to be executed later">
+                        A function passed as an argument to another function to be executed
+                        later</li>
+                    <li><input type="radio" name="answers[6]" value="A function that runs immediately"> A function
+                        that runs
+                        immediately</li>
+                    <li><input type="radio" name="answers[6]" value="A function that only runs once"> A function that
+                        only runs
+                        once</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 8:</strong> What is the purpose of the require.cache object in
+                Node.js?
+                <ul>
+                    <li><input type="radio" name="answers[7]"
+                            value="To cache frequently used modules for faster access"> To cache
+                        frequently used modules for faster access</li>
+                    <li><input type="radio" name="answers[7]" value="To store information about all installed packages">
+                        To store
+                        information about all installed packages</li>
+                    <li><input type="radio" name="answers[7]" value="To manage the memory usage of the application">
+                        To manage the
+                        memory usage of the application</li>
+                    <li><input type="radio" name="answers[7]" value="To track the dependencies of the application">
+                        To track the
+                        dependencies of the application</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 9:</strong> What is npm in the context of Node.js?
+                <ul>
+                    <li><input type="radio" name="answers[8]" value="Node Package Manager">
+                        Node Package Manager</li>
+                    <li><input type="radio" name="answers[8]" value="Network Package Manager"> Network Package
+                        Manager</li>
+                    <li><input type="radio" name="answers[8]" value="Node Programming Module">Node Programming Module
+                    </li>
+                    <li><input type="radio" name="answers[8]" value="Network Programming Module"> Network Programming
+                        Module</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Question 10:</strong> What is the main purpose of Node.js?
+                <ul>
+                    <li><input type="radio" name="answers[9]" value="Frontend development">
+                        Frontend development</li>
+                    <li><input type="radio" name="answers[9]" value="Backend development">
+                        Backend development</li>
+                    <li><input type="radio" name="answers[9]" value="Mobile app development">
+                        Mobile app development</li>
+                    <li><input type="radio" name="answers[9]" value="Game development"> Game
+                        development</li>
+                </ul>
+            </li>
+        </ul>
+        <button type="submit">Submit Answer</button>
+    </form>
+
+    <script>
+        fetch('/quiz')
+            .then(response => response.json())
+            .then(question => {
+                const questionContainer = document.getElementById('question-container');
+                questionContainer.innerHTML = `
+          <h2>${question.question}</h2>
+          <ul>
+            ${question.options.map((option, index) => `<li><input type="radio" name="answer" value="${index}">${option}</li>`).join('')}
+          </ul>
+        `;
+            });
+    </script>
+</body>
+
+</html>

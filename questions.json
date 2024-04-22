@@ -1,0 +1,102 @@
+[
+    {
+        "question": "What is the event-driven architecture used in Node.js called?",
+        "options": [
+            "Event Loop",
+            "Callback Loop",
+            "Async Loop",
+            "Promise Loop"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which module in Node.js is used to create web servers?",
+        "options": [
+            "http",
+            "fs",
+            "path",
+            "net"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which of the following is NOT a valid way to handle errors in Node.js?",
+        "options": [
+            " try-catch blocks",
+            "callback functions with error-first approach",
+            "event listeners",
+            "promise chaining"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which module in Node.js is used for handling file operations?",
+        "options": [
+            "fs (File System)",
+            "http (HTTP)",
+            "net (Network)",
+            "url (URL)"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Which function is used to import modules in Node.js?",
+        "options": [
+            "import",
+            "require",
+            "importModule",
+            "include"
+        ],
+        "correctAnswer": 4
+    },
+    {
+        "question": "What does the event loop in Node.js do?",
+        "options": [
+            "Handles asynchronous operations",
+            "Executes synchronous code",
+            "Renders web pages",
+            "Manipulates the DOM"
+        ],
+        "correctAnswer": 5
+    },
+    {
+        "question": "What is a callback function in Node.js?",
+        "options": [
+            "A function that returns a value",
+            "A function passed as an argument to another function to be executed later",
+            "A function that runs immediately",
+            "A function that only runs once"
+        ],
+        "correctAnswer": 6
+    },
+    {
+        "question": "What is the purpose of the require.cache object in Node.js?",
+        "options": [
+            "To cache frequently used modules for faster access",
+            "To store information about all installed packages",
+            "To manage the memory usage of the application",
+            "To track the dependencies of the application"
+        ],
+        "correctAnswer": 7
+    },
+    {
+        "question": "What is npm in the context of Node.js?",
+        "options": [
+            "Node Package Manager",
+            "Network Package Manager",
+            "Node Programming Module",
+            "Network Programming Module"
+        ],
+        "correctAnswer": 8
+    },
+    {
+        "question": "What is the main purpose of Node.js?",
+        "options": [
+            "Frontend development",
+            "Backend development",
+            "Mobile app development",
+            "Game development"
+        ],
+        "correctAnswer": 9
+    }
+]
